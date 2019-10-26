@@ -2,3 +2,5 @@
 node_modules
 mongo-volume
 .env
+combined.log
+error.log

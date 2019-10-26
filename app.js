@@ -7,6 +7,12 @@ if (result.error) {
     throw result.error
 }
 console.log(result.parsed)
-console.log('minion ready')
-logger.info(`server startup`)
-minion();
+try {
+    require('./database/database');
+    console.log('minion ready')
+    logger.info(`server startup`)
+    minion();
+} catch (error) {
+    console.log('minion NOT ready')
+    console.log(error)
+}

@@ -1,0 +1,8 @@
+{
+  "name": "minion",
+  "version": "0.1",
+  "description": "minion will do the work",
+  "main": "app.js",
+  "author": "Adam Tse <mr.adam.tse@gmail.com>",
+  "license": "MIT"
+}

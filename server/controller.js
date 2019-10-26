@@ -1,4 +1,6 @@
 const logger = require('../service/logger')
+const graphqlHTTP = require('express-graphql');
+const schema = require('../database/schema')
 
 const Controller = {
     version : (req, res) => {
@@ -9,7 +11,11 @@ const Controller = {
     },
     query : (req, res) => {
         logger.info(`query: ${req.body}`)
-    }
+    },
+    graphDebug: graphqlHTTP({   
+        schema,
+        graphiql: true
+    })
 }
 
 

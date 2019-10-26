@@ -11,7 +11,7 @@ const logger = winston.createLogger({
         }),
         winston.format.json()
     ),
-    defaultMeta: { service: 'minion-service' },
+    // defaultMeta: { service: 'minion-service' },
     transports: [
         //
         // - Write to all logs with level `info` and below to `combined.log` 
